@@ -18,6 +18,7 @@ public class ClienteListener  implements Runnable{
     public void run() {
         Scanner in  = new Scanner(this.cliente);
         while(in.hasNextLine()){
+            //enviar mensagem para todos os clientes
             server.sendM(in.nextLine());
         }
     }

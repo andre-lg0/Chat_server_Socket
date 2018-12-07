@@ -41,7 +41,7 @@ public class Server {
 
         }
     }
-
+        /// metodo para mandar mensagem para todos os clientes.
     public void sendM(String msg) {
         for (PrintStream cliente : this.clientes) {
             cliente.println(msg);
